@@ -76,9 +76,6 @@ st.image(image_for_display.squeeze().numpy(), caption=f"Ground Truth: {label}", 
 
 # 모델 정의 및 추론
 model = SimpleNN()
-# 학습된 모델 불러오기 예시
-model.load_state_dict(torch.load("trained_mnist_model.pth"))
-
 model.eval()
 
 with torch.no_grad():
